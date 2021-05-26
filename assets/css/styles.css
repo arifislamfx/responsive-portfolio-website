@@ -170,19 +170,19 @@ img {
   color: var(--first-color);
 }
 
-.nav__toggle {
+.nav-toggle {
   font-size: 1rem;
   cursor: pointer;
 }
 
-.nav__toggle:hover {
+.nav-toggle:hover {
   color: var(--first-color);
 }
 
 @media screen and (max-width: 768px) {
   .nav__menu {
     position: fixed;
-    bottom: 0;
+    bottom: -100%;
     left: 0;
     width: 100%;
     background-color: var(--body-color);
@@ -215,7 +215,7 @@ img {
   font-size: 1.2rem;
 }
 
-.nav__close {
+.nav-close {
   position: absolute;
   right: 1.3rem;
   bottom: 0.5rem;
@@ -224,11 +224,14 @@ img {
   color: var(--first-color);
 }
 
-.nav__close:hover {
+.nav-close:hover {
   color: var(--first-color-alt);
 }
-/* show menu */
 
+/* show menu */
+.show-menu {
+  bottom: 0;
+}
 /* Active link */
 
 /* Change background header */
